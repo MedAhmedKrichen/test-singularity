@@ -11,7 +11,6 @@ RUN pip3 install --no-cache numpy \
     pytube \
     moviepy \
     crepe \
-    aubio \
     pydub \
     librosa \
     opencv-python \
