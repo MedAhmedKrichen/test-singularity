@@ -8,8 +8,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install --assume-yes --no-install-rec
     unzip \
     git-all
 
-RUN pip3 install --no-cache numpy \
-    pytube \
+RUN pip3 install --no-cache pytube \
     moviepy \
     crepe \
     pydub \
@@ -20,7 +19,6 @@ RUN pip3 install --no-cache numpy \
     pyannote.audio \
     pytorch-lightning==2.3.0 \
     speechbrain==1.0.0 \    
-    pillow \
     accelerate \
     torchvision \
     torchaudio \
