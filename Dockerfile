@@ -14,13 +14,11 @@ RUN pip3 install --no-cache numpy \
     aubio \
     pydub \
     librosa \
-    speechbrain \
     opencv-python \
     pytesseract \
     fer \
     pyannote.audio \
     torch==2.2.2 \
-    speechbrain==0.5.16 \
     pytorch-lightning==2.3.0 \
     speechbrain==1.0.0 \
     
