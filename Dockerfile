@@ -1,6 +1,5 @@
 FROM pytorch/pytorch:1.13.1-cuda11.6-cudnn8-runtime
 
-docker system prune -a -f
 
 RUN apt-get update
 
@@ -26,7 +25,7 @@ RUN pip3 install --no-cache numpy \
     torchvision \
     torchaudio \
     transformers \
-    sentence-transformers \
+    sentence-transformers 
 
 
 RUN pip3 uninstall opencv-python-headless -y 
