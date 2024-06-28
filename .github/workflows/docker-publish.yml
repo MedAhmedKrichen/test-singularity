@@ -34,7 +34,7 @@ jobs:
 
           registry: ghcr.io
 
-          image_name: ${{ github.actor }}/speechbrain
+          image_name: ${{ github.actor }}/test
 
           username: ${{ github.actor }}
 
