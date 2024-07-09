@@ -22,7 +22,7 @@ RUN apt-get update && \
         unzip \
         wget \
         git \
-        python3.9 \
+        python3.7 \
         zlib1g-dev \
         ffmpeg \
 	vim && \
