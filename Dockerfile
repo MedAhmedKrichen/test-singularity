@@ -8,22 +8,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install --assume-yes --no-install-rec
     unzip \
     git-all
 
-RUN pip3 install --no-cache pytube \
-    moviepy \
-    crepe \
-    pydub \
-    librosa \
-    opencv-python \
-    pytesseract \
-    fer \
-    pyannote.audio \
-    pytorch-lightning==2.3.0 \
-    speechbrain==1.0.0 \    
-    accelerate \
-    torchvision \
-    torchaudio \
-    transformers \
-    sentence-transformers 
+RUN pip3 install --no-cache torch \
+    transformers 
 
 
 RUN pip3 uninstall opencv-python-headless -y 
