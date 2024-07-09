@@ -17,7 +17,7 @@ jobs:
 
     steps:
 
-      - name: Checkout repo
+      - name: checkout repo
 
         uses: actions/checkout@v2
         
@@ -26,7 +26,7 @@ jobs:
           submodules: recursive
 
 
-      - name: Build/push
+      - name: build/push
 
         uses: whoan/docker-build-with-cache-action@v5
 
