@@ -11,7 +11,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install --assume-yes --no-install-rec
 RUN pip3 install --no-cache torch \
     transformers \
     huggingface \
-    accelerate
+    accelerate \
+    jinja2 == 3.1.0
 
 
 RUN pip3 uninstall opencv-python-headless -y 
