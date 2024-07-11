@@ -8,8 +8,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install --assume-yes --no-install-rec
     unzip \
     git-all
 
-RUN pip3 install --no-cache torch \
-    transformers \
+RUN pip3 install --no-cache torch==2.2.2 \
+    transformers==4.41.2 \
     huggingface \
     accelerate \
     jinja2==3.1.0
