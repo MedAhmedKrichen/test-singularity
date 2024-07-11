@@ -9,7 +9,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install --assume-yes --no-install-rec
     git-all
 
 RUN pip3 install --no-cache torch \
-    transformers 
+    transformers \
+    huggingface
 
 
 RUN pip3 uninstall opencv-python-headless -y 
