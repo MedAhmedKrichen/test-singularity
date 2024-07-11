@@ -12,7 +12,7 @@ RUN pip3 install --no-cache torch \
     transformers \
     huggingface \
     accelerate \
-    jinja2 == 3.1.0
+    jinja2==3.1.0
 
 
 RUN pip3 uninstall opencv-python-headless -y 
