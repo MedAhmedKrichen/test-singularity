@@ -5,7 +5,7 @@ RUN apt-get update
 
  
 
-RUN pip3 install torch==2.2.2 \
+RUN pip3 install --no-cache torch==2.2.2 \
     transformers==4.41.2 \
     huggingface \
     accelerate \
