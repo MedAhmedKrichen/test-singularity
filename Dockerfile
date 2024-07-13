@@ -12,21 +12,17 @@ RUN pip3 install --no-cache torch==2.2.2 \
     transformers==4.41.2 \
     huggingface \
     accelerate \
-    jinja2==3.1.0
+    jinja2==3.1.0 \
+    moviepy \
+    pyannote.audio \
+    torchvision \
+    speechbrain==0.5.16 \
+    pytorch-lightning==2.3.0
 
 
-RUN pip3 uninstall opencv-python-headless -y 
 
-RUN pip3 install opencv-python --upgrade
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
-       
-        unzip \
-        wget \
-        git \
         python3.7 \
-        zlib1g-dev \
         ffmpeg \
-	vim && \
     rm -rf /var/lib/apt/lists/*
