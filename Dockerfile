@@ -13,7 +13,7 @@ RUN pip3 install --no-cache torch==2.2.2 \
     moviepy \
     pyannote.audio \
     torchvision \
-    speechbrain==0.5.16 \
+    speechbrain==0.5.16 
  
 
 
